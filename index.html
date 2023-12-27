@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lobster&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="man-freelancer-working-from-home-armchair-typing-laptop-remote-work_208581-47.webp" type="image/x-icon">
+    <title>project1</title>
+</head>
+<style>
+    body{
+        margin: auto;
+        max-width: 1600px
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ body start/////////////////////  --> */
+     @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+     body{
+        color: gray;
+     }
+     ::-webkit-scrollbar{
+        height: 0;
+        width: .5rem;
+    }
+    ::-webkit-scrollbar-track{
+        /* background-color: rgba(0, 217, 255, 0.16); */
+        backdrop-filter: blur(10px);
+    }
+    ::-webkit-scrollbar-thumb{
+        background: rgb(255, 179, 38);
+        border-radius: 10px;
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ body end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ nav start/////////////////////  --> */
+    nav .navbar-brand ,.active a{color: orange;}
+    nav li:hover .nav-link ,.navbar-brand:hover{color: orange;}
+    nav li,.active{position: relative; margin: 0 2px;}
+    nav li::before,.active::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        height: 5%;
+        background: orange;
+        transition: .5s;
+    }
+    .active::before{width: 100%;}
+    nav li:hover::before{width: 100%;}
+    nav li a{text-align: center;}
+    /* <!-- / \\\\\\\\\\\\\\\ nav end /////////////////////  -->   */
+    /* <!-- / \\\\\\\\\\\\\\\ box1 start/////////////////////  --> */
+    .box1{ overflow: hidden;}
+    .box1 .item1 span{
+        color: orange;
+    }
+    .box1 .item1_2{
+        width: 80%;
+        margin: auto;
+    }
+    .box1 .item1_2 h6{
+        margin-top: 30px;
+    }
+    .box1 p{
+        color: gray;
+    }
+    .box1 button{
+        background-color: orange;
+    }
+    .box1 .p1{line-height: 0px;
+        margin-top: 30px;
+    }
+    .box1 button:hover{color: orange; border:1px solid orange;}
+    .box1 .btn2{background: white; border: 1px solid orange; color: orange;}
+    .box1 .btn2:hover{background: orange; border-color: azure; color: white;}
+    /* <!-- / \\\\\\\\\\\\\\\ box1 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box2 start/////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box2 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box3 start/////////////////////  --> */
+    .box3{margin: 100px 0;}
+    .box3 .line1{
+        height: 10px;
+        position: relative;
+        background-color: rgb(207, 207, 207);
+        margin-bottom: 29px;
+    }
+    .box3 .line1::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 93%;
+        height: 100%;
+        background: red;
+        border-radius: 50px;
+    }
+    .box3 .line2::before{
+        background-color: orange;
+        width: 83%;
+    }
+    .box3 .line3::before{
+        background-color: green;
+        width: 88%;
+    }
+    .box3 p:nth-child(3){margin-top: -20px;}
+    /* <!-- / \\\\\\\\\\\\\\\ box3 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box4 start/////////////////////  --> */
+    .box4 .row{padding: 10vw 0;}
+    .box4 .col-md-3{
+        max-width: 300px;
+        padding: 20px;
+        background-color: gainsboro;
+        transition: .5s;
+    }
+    .box4 .col-md-3 div{
+        background-color: rgba(255, 166, 0, 0);
+        color: orange;
+        border: 1px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        padding: 5vw;
+        margin: auto;
+        margin-bottom: 20px;
+        transition: .5s;
+    }
+    .box4 li{
+        list-style-type: circle;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .box4 li:hover{color: orange;}
+    .box4 .col-md-3:hover{
+        background: white;
+        box-shadow: 7px 7px 10px rgb(187, 187, 187), -7px -7px 10px rgb(179, 179, 179);
+        scale: 1.1;
+        border-radius: 10px;
+    }
+    .box4 .col-md-3:hover.col-md-3 div{
+        border: none;
+        background-color: rgba(255, 166, 0, 0.297);
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ box4 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box5 start/////////////////////  --> */
+    .box5{
+        width: 100%;
+        background-image: url(https://img.freepik.com/free-vector/professional-programmer-engineer-writing-code_3446-693.jpg?size=626&ext=jpg&uid=R121351530&ga=GA1.1.1350323.1697652048&semt=ais);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+        background-attachment: fixed;
+    }
+    .btn1{
+        background: orange;
+        border-radius: 2px;
+        color: aliceblue;
+        padding: 2px 20px;
+    }
+    .btn1:hover{
+        background-color: rgb(255, 255, 255);
+        border:1px solid orange;
+        color: orange;
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ box5 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box6 start/////////////////////  --> */
+    .box6{
+        padding: 100px 0;
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ box6 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box7 start/////////////////////  --> */
+    .box7{
+        padding: 50px 0;
+        gap: 3vw;
+    }
+    .box7 div{
+        padding: 3vw 5vw;
+        background: gainsboro;
+        transition:all .3s;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .box7 div:hover{
+        color: orange;
+        background: white;
+        box-shadow: 2px 2px 10px rgb(224, 224, 224), -2px -2px 10px rgb(213, 213, 213),0 0 0 2px rgb(212, 138, 0);
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ box7 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box8 start/////////////////////  --> */
+    .box8{
+        gap: 20px;
+        color: gray;
+        transition: .3s;
+    }
+    .box8 svg{transition: .3s;}
+    .box8 svg:hover{
+        color: orange;
+        cursor: pointer;
+    }
+    /* <!-- / \\\\\\\\\\\\\\\ box8 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box9 start/////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box9 end /////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box10 start/////////////////////  --> */
+    /* <!-- / \\\\\\\\\\\\\\\ box10 end /////////////////////  --> */
+</style>
+<body>
+    <!-- / \\\\\\\\\\\\\\\ main start/////////////////////  -->
+    <main class="container">
+    <!-- / \\\\\\\\\\\\\\\ nav start/////////////////////  -->
+    <nav class="navbar  navbar-expand-lg text-capitalize fw-bold">
+            <a href="" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a href="" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">service</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">portfolio</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+                </ul>
+            </div>
+    </nav>
+    <!-- / \\\\\\\\\\\\\\\ nav end //////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box1 start/////////////////////  -->
+    <div class="box1  row align-items-center text-capitalize">
+        <div class="item1 col-md-6">
+            <div class="item1_1">
+                <p class="p1">hi dear,</p>
+                <p>the standark chunk of <span style="font-weight: 500;">lorem ipsum</span><br> used since <span style="font-weight: 500;">the 1500s</span></p>
+                <h3 class="text-dark fw-light">cicero are also reproduced <br> <span class="text-nowrap" style="font-weight: 500;"> = SITENAME</span></h3>
+            </div>
+            <div class="item1_2 text-center mt-5">
+                <div class="d-flex justify-content-around flex-wrap">
+                    <button class="btn btn-outline-light mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg> Hire me</button>
+                    <button class="btn btn2 mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg> About Me</button>
+                </div>
+                <h6 class="text-dark">Email</h6>
+                <p>test@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://img.freepik.com/premium-vector/man-freelancer-working-from-home-armchair-typing-laptop-remote-work_208581-47.jpg?size=626&ext=jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box1 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box2 start/////////////////////  -->
+    <div class="box2  row justify-content-center">
+            <h1 class="text-dark col-12 text-center">About Me</h1>
+        <div class="col-md-5 d-flex align-items-center justify-content-center" style="height: 300px;">
+            <img src="https://img.freepik.com/free-vector/graphic-designer-workplace_23-2148117172.jpg?t=st=1702475926~exp=1702476526~hmac=f312da333df5bc5fa8e1ec89ac2271b2f6beda8efbca199d63aedf764cb8f241" class="img-fluid align-self-center  h-100" alt="">
+        </div>
+        <div class="col-md-7">
+            <p class="mt-5">Hello, <br>
+            <span class="text-dark" style="font-weight: 500;">i'm a passionate designer</span></p>
+            <p>i'have 3 years experience. i can help you grow your business by doing Something different and new for your business. i have done a lot of business and i have helped you lot.</p>
+        </div>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box2 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box3 start/////////////////////  -->
+    <div class="box3 ">
+        <div class="item1 text-center text-capitalize">
+            <h1 class="text-dark">work expertise</h1>
+            <p>obviously i'm a graphic designer.</p>
+            <p>experienced with all stages of the design cycle width every project</p>
+        </div>
+        <div class="item2 row align-items-center justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-6">photoshop</div>
+                    <div class="col-6 text-end">93%</div>
+                    <div class="col-12 line1 rounded"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">illustrator</div>
+                    <div class="col-6 text-end">83%</div>
+                    <div class="col-12 line1 rounded line2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6">branding</div>
+                    <div class="col-6 text-end">88%</div>
+                    <div class="col-12 line1 rounded line3"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://img.freepik.com/premium-vector/man-freelancer-working-from-home-armchair-typing-laptop-remote-work_208581-47.jpg?size=626&ext=jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box3 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box4 start/////////////////////  -->
+    <div class="box4  text-capitalize">
+        <h1 class="text-center text-dark">our services</h1>
+        <p class="text-center">we provide <span class="text-dark" style="font-weight: 500;">high quality - creative services.</span></p>
+        <div class="row justify-content-center" style="gap: 2vw;">
+            <div class="col-md-3">
+                <div><h1>1</h1></div>
+                <ul>
+                    <li>logo design</li>
+                    <li>business card</li>
+                    <li>letterhead</li>
+                    <li>branding</li>
+                </ul>
+            </div><div class="col-md-3">
+                <div><h1>2</h1></div>
+                <ul>
+                    <li>logo design</li>
+                    <li>business card</li>
+                    <li>letterhead</li>
+                    <li>branding</li>
+                </ul>
+            </div><div class="col-md-3">
+                <div><h1>3</h1></div>
+                <ul>
+                    <li>logo design</li>
+                    <li>business card</li>
+                    <li>letterhead</li>
+                    <li>branding</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- / \\\\\\\\\\\\\\\ box4 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box5 start/////////////////////  -->
+    <div class="box5 text-center text-light text-capitalize">
+        <h5 class="text-warning">i am available for freelancer project</h5>
+        <h6 style="color: rgb(190, 190, 190);">you need innovative and creative design and designer</h6>
+        <button class="btn btn-warning btn-outline-light border border-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg>hire me</button>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box5 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box6 start/////////////////////  -->
+    <div class="box6 text-center text-capitalize container">
+       <h1 class="display-3 text-uppercase text-dark" style="font-weight: 400;">contact me</h1>
+       <p>feel free to contact me any time.</p>
+       <form class="row  g-2 needs-validation text-start justify-content-center" novalidate>
+        <div class="col-md-6 m-2">
+          <input type="text" class="form-control" name="" id="" placeholder="Type your name" required>
+          <div class="valid-feedback">looks good! </div>
+          <div class="invalid-feedback">you must put an name! </div>
+        </div>
+        <div class="col-md-6 m-2">
+          <input type="number" class="form-control" placeholder="Type your mobile" required>
+          <div class="valid-feedback">looks good! </div>
+          <div class="invalid-feedback">you must put an number! </div>
+        </div>
+        <div class="col-md-6 m-2">
+          <input type="email" class="form-control" placeholder="...@gmail.com" required>
+          <div class="valid-feedback">looks good! </div>
+          <div class="invalid-feedback">your mail is unvalid !</div>
+        </div> 
+        <div class="col-md-6 m-2">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="inter your massege"></textarea>
+              <label for="">comment</label>
+            </div>
+           </div>
+        <div class="col-md-12 text-center">
+          <button class="btn btn1">submit</button>
+        </div>
+      </form>
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+      </script>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box6 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box7 start/////////////////////  -->
+    <div class="box7 container d-flex flex-wrap justify-content-center">
+       <div class="d-flex flex-column align-items-center justify-content-center rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+          <p class="fw-bolder mt-2 text-dark">test@gmail.com</p>
+       </div>
+       <div class="d-flex flex-column align-items-center justify-content-center rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+          </svg>
+          <p class="fw-bolder mt-2 text-dark">+91 00000 11111</p>
+       </div>
+       <div class="d-flex flex-column align-items-center justify-content-center rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>
+          <p class="fw-bolder mt-2 text-dark">city</p>
+       </div>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box7 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box8 start/////////////////////  -->
+    <div class="box8 d-flex align-items-center justify-content-center flex-wrap">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook display-6" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp display-6" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-xbox display-6" viewBox="0 0 16 16">
+    <path d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest display-6" viewBox="0 0 16 16">
+    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance display-6" viewBox="0 0 16 16">
+    <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"/>
+  </svg>
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box8 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box9 start/////////////////////  -->
+    <div class="box9 pt-1 pb-1 w-100 bg-warning text-center mt-2" style="color: rgb(211, 137, 0);">
+        @name 2023 | all right reserved
+    </div>
+    <!-- / \\\\\\\\\\\\\\\ box9 end /////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box10 start/////////////////////  -->
+    <!-- / \\\\\\\\\\\\\\\ box10 end /////////////////////  -->
+    
+    <!-- / \\\\\\\\\\\\\\\ main end/////////////////////  -->
+    <script>
+    // <!-- / \\\\\\\\\\\\\\\ box1 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box1 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box2 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box2 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box3 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box3 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box4 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box4 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box5 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box5 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box6 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box6 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box7 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box7 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box8 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box8 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box9 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box9 end /////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box10 start/////////////////////  -->
+    // <!-- / \\\\\\\\\\\\\\\ box10 end /////////////////////  -->
+    </script>
+</body>
+</html>
